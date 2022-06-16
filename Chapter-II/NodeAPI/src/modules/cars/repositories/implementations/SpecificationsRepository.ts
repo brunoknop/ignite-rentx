@@ -12,7 +12,7 @@ class SpecificationRepository implements ISpecificationsRepository {
     }
     public static getInstance(): SpecificationRepository {
         if (!SpecificationRepository.INSTANCE) {
-            this.INSTANCE = new SpecificationRepository();
+            SpecificationRepository.INSTANCE = new SpecificationRepository();
         }
         return SpecificationRepository.INSTANCE;
     }
