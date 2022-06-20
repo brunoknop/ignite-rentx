@@ -1,7 +1,7 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "RentalX Documentation",
+        "title": "Rentx Documentation",
         "description": "This is an API rent",
         "version": "1.0.0",
         "contact": {
@@ -20,12 +20,8 @@
                             "schema": {
                                 "type": "object",
                                 "properties": {
-                                    "name": {
-                                        "type": "string"
-                                    },
-                                    "description": {
-                                        "type": "string"
-                                    }
+                                    "name": { "type": "string" },
+                                    "description": { "type": "string" }
                                 },
                                 "exemple": {
                                     "name": "Category name sample",
@@ -44,6 +40,7 @@
                     }
                 }
             },
+
             "get": {
                 "tags": ["Category"],
                 "summary": "List all categories",
@@ -58,12 +55,8 @@
                                     "items": {
                                         "type": "object",
                                         "properties": {
-                                            "name": {
-                                                "type": "string"
-                                            },
-                                            "description": {
-                                                "type":"string"
-                                            }
+                                            "name": { "type": "string" },
+                                            "description": { "type":"string" }
                                         }
                                     }
                                 }
